@@ -130,4 +130,50 @@ print("VaR 99%:", result["var_99"])  # → -247850.42 за 6.2 сек
 > **CrowdQuant — это не инфраструктура. Это конкурентное преимущество.**
  
 
-Скажите — что нужно?
+---
+
+
+
+| Категория | Примеры компаний | Где искать | Как связаться |
+|-----------|------------------|------------|---------------|
+| **1. Prop Trading Firms (High-Frequency / Options Market-Making)** | Optiver, IMC, Flow Traders, Jump Trading, Virtu, Akuna Capital, Radix Trading | - LinkedIn (поиск: *“quantitative trader” + “options” + “risk”*) <br> - QuantConnect, Wilmott Forum, r/algotrading <br> - Конференции: **QuantCon (NYC/London)**, **RiskMinds**, **OptionsCity Summit** | Cold email через LinkedIn Sales Navigator: <br> _«Hi [Name], we cut your VaR recalc latency from 8 min → 6 sec — no DevOps. Demo in 1 day?»_ |
+| **2. Small/Mid-sized Hedge Funds ($10M–$500M AUM)** | ExoTix, Qube Research, Quantica Capital, Capstone Investment Advisors, Tibra Capital | - HedgeFund Research (HFR) Directory <br> - Preqin, Eurekahedge <br> - Bloomberg Terminal (`FLDS <GO>` → Hedge Fund Search) | Email через сайт → «Risk Team» / «Quant Dev» / «CTO» <br> Шаблон: _«Your backtest latency is your alpha leak»_ |
+| **3. DeFi & Crypto-native Risk Teams** | Aave, Lido, GMX, Synthetix, Euler, Pendle, Angle Protocol | - GitHub (issues в risk-репозиториях) <br> - Discord (Aave Risk, Lido Research) <br> - Twitter: поиск `site:twitter.com "stress test" OR "VaR" DeFi` | Демо через GitHub PR: _«Added CrowdQuant integration → 10x faster stress-test»_ → merge → contact core team |
+| **4. InsurTech & Reinsurance Startups** | Lemonade, Shift Technology, Tractable, Coalition, Cytora | - Crunchbase → фильтр: InsurTech + Series B+ <br> - InsurTech Connect Conference (Las Vegas) <br> - Lloyd’s Lab alumni | Email: `risk@...`, `head.of.quant@...` <br> Повод: _«GDPR-compliant risk engine in Frankfurt — no AWS data exfiltration»_ |
+
+
+
+---
+
+## 💰 Сколько они платят? (реальные рыночные ставки)
+
+| Модель | Цена | Для кого | Пример контракта |
+|-------|------|----------|------------------|
+| **Pay-per-job** | $80–$500 / расчёт | Prop firms, DeFi протоколы | 500 расчётов/день × $120 = **$18K/мес** |
+| **Dedicated Pool** | $3K–$15K / месяц | Hedge funds, InsurTech | 5 VPS (80 ядер), 24/7, SLA 5 сек — **$7.5K/мес** |
+| **Enterprise API** | $25K–$100K / год | Tier-2 hedge funds | Фикс. лимит: 100K jobs/год + support + SLA + audit log |
+| **White-label Risk Engine** | $50K–$200K / год | Reinsurers, RegTech | Полная интеграция в их risk dashboard — ваш бэкенд, их UI |
+
+> 📊 **Средний LTV (Lifetime Value) клиента**:  
+> - Prop firm: **$120K/год**  
+> - Hedge fund: **$90K/год**  
+> - DeFi protocol: **$40K/год** (но быстрее закрывают)
+
+---
+
+## 🌍 География: кто где и как им продавать
+
+| Регион | Особенности | Где искать | Язык коммуникации |
+|--------|-------------|------------|-------------------|
+| **Западная Европа (DE, NL, CH, UK)** | GDPR-чувствительны, ценят latency & compliance | - **Hamburg** (prop firms), **Amsterdam** (IMC, Flow), **Zurich** (hedge funds) <br> - Meetups: *Quant Finance Berlin*, *London Python Quant* | Английский + немного немецкого для DE |
+| **США (NYC, Chicago, Boston)** | Готовы платить за скорость, но требуют SLA | - NYC: prop shops в Financial District <br> - Chicago: CME-ориентированные MM <br> - Crunchbase → фильтр: *“quantitative” + “Series A”* | Английский (американский) |
+| **Китай (Шанхай, Шэньчжэнь)** | Акцент на DeFi, но осторожны с иностранными API | - WeChat-группы DeFi-разработчиков <br> - Конференции: **Token2049 (Singapore)**, **China DeFi Summit** <br> - GitHub: китайские форки Aave/Lido | Английский + Mandarin (через локального партнёра) |
+| **Индия (Бангалор, Мумбаи)** | Растущий quant-рынок, бюджет ограничен | - Инкубаторы: **NASSCOM DeepTech Club**, **T-Hub** <br> - Indian Association of Quant Funds (IAQF) | Английский (британский) |
+| **Австралия (Сидней, Мельбурн)** | DeFi + commodities risk | - ASX-связанные prop firms <br> - Meetups: *Sydney Quant Dev* | Английский (австралийский) |
+
+> 💡 **Топ-3 локации для старта**:  
+> 1. **Амстердам** (много prop firms, английский, низкие налоги)  
+> 2. **Лондон** (hedge funds, но post-Brexit сложнее)  
+> 3. **Сингапур** (gateway в Азию, tax-friendly для IT)
+
+---
